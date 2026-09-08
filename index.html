@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hyuelongos</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Site brand and primary navigation -->
+    <a class="site-brand" href="index.html#home" aria-label="Hyue home">Hyue</a>
+
+    <div class="logo">Hilongos, Leyte</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#map-section">Map</a></li>
+            <li><a href="#scenic-views">Scenic Views</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- Homepage hero introduction -->
+    <header class="hero" id="home">
+        <p class="hero-kicker">A glimpse of the south</p>
+        <h1>Welcome to Hilongos, Leyte</h1>
+        <p class="hero-subtitle">Discover the history, culture, and warm spirit of the Bell Tower City.</p>
+    </header>
+    <!-- Short hometown highlights -->
+    <div class="intro-headings">
+        <h2>The Bell Tower City</h2>
+        <h3>A Glimpse of the South</h3>
+        <h4>Rich in Culture</h4>
+        <h5>Amazing People</h5>
+        <h6>Your Next Destination</h6>
+    </div>
+
+    <p style="font-size: 18px; line-height: 1.6;" title="Introduction to our beautiful hometown">
+        Hilongos is a thriving municipality. You can learn more about its heritage by visiting the 
+        <a href="https://en.wikipedia.org/wiki/Hilongos" target="_blank" title="Read more on Wikipedia">Wikipedia page</a>, 
+        or you can check out our 
+        <a href="#scenic-views" title="Local Gallery">local gallery</a>.
+    </p>
+
+    <img class="feature-image zoom-image" src="background.jpg" alt="Hilongos Bell Tower and church" width="350" height="200">
+
+    <hr>
+
+    <!-- History and HTML text-formatting examples -->
+    <section id="history" class="history-section">
+        <h2>History and Text Formatting</h2>
+
+    <pre>
+    Hilongos Bell Tower
+    Standing tall for centuries,
+    a testament to our faith.
+    </pre>
+
+    <p>
+        The spirit of Hilongosnons is <b>bold</b> and <strong>strong</strong>. 
+        We have an <i>interesting</i> and <em>vibrant</em> history. 
+        Don't <mark>forget</mark> to try our local delicacies! 
+        Even a <small>short</small> visit leaves a lasting impression. 
+        Historical artifacts have not been <del>destroyed</del> but <ins>preserved</ins>. 
+        The town's coordinates include 10<sup>o</sup> North and 124<sub>o</sub> East.
+    </p>
+
+    <blockquote>
+        "Hilongos is an ancient settlement that became a thriving center of commerce and faith."
+    </blockquote>
+    
+    <p>As locals often say during fiestas, <q>Viva Señor San Juan!</q></p>
+
+    <p>
+        The <abbr title="Local Government Unit">LGU</abbr> ensures the town's progress.
+    </p>
+
+    <p>Read more in <cite>The History of Leyte</cite>.</p>
+
+    <p><bdo dir="rtl">This text demonstrates right-to-left direction.</bdo></p>
+        <p><bdo dir="ltr">This text demonstrates left-to-right direction.</bdo></p>
+    </section>
+
+    <hr>
+
+    <!-- Responsive image map and destination hotspots -->
+    <h2 id="map-section">Interactive Map of Hilongos</h2>
+
+    <div class="map-container">
+            <img id="responsive-map-img" class="feature-image map-image" src="hilongos.png" alt="Hilongos Map" usemap="#image-map" style="width: 100%; max-width: 1000px;">
+            <a id="baywalk-highlight" class="map-circle-highlight" href="baywalk.html" aria-label="Open Baywalk information"></a>
+            <a id="makinhas-highlight" class="map-rect-highlight" href="makinhas-dam.html" aria-label="Open Makinhas Dam information"></a>
+            <span id="map-tooltip" class="map-tooltip" role="status"></span>
+    </div>
+
+    <map name="image-map">
+        <area target="_self" alt="Hilongos" title="Hilongos" href="index2.html" coords="519,683,534,677,545,677,552,675,548,667,658,629,682,608,747,599,759,608,833,580,796,522,791,485,820,413,826,302,873,210,857,206,845,172,671,301,662,298,663,310,648,302,621,315,603,323,600,343,580,351,552,377,474,406,447,432,428,434,404,457,364,467,363,505,378,540,388,576,441,606,473,624,496,650" shape="poly">
+        
+        <area shape="rect" coords="32,20,150,100" href="#scenic-views" alt="Municipal Plaza" title="Municipal Plaza">
+        <area shape="circle" coords="200,200,40" href="#history" alt="Hilongos Bell Tower" title="Hilongos Bell Tower">
+        <area id="baywalk-area" target="_self" alt="Baywalk" title="Baywalk" href="baywalk.html" coords="420,589,15" shape="circle">
+        <area target="_self" alt="Makinhas Dam" title="Makinhas Dam" href="makinhas-dam.html" coords="546,509,527,479" shape="rect">
+    </map>
+    <p id="map-hover-label" class="map-hover-label" aria-live="polite">Hover over a map area to explore Hilongos.</p>
+
+    <a class="map-view-button" href="map-view.html">
+        <button type="button">View Hilongos Map Image</button>
+    </a>
+
+    <br><br>
+
+    <!-- Scenic image gallery -->
+    <h2 id="scenic-views">Scenic Views of Hilongos</h2>
+    <div class="scenic-gallery">
+        <figure class="scenic-view">
+            <picture>
+                <source media="(min-width: 800px)" srcset="scenic.jpg">
+                <source media="(min-width: 400px)" srcset="scenic.jpg">
+                <img src="scenic.jpg" alt="Scenic view of Hilongos" style="width:100%;">
+            </picture>
+            <figcaption>A scenic view of Hilongos, Leyte</figcaption>
+        </figure>
+        <figure class="scenic-view">
+            <img src="church.jpg" alt="Church in Hilongos, Leyte" style="width:100%;">
+            <figcaption>Historic church of Hilongos</figcaption>
+        </figure>
+        <figure class="scenic-view">
+            <img src="makinhas.jpg" alt="Makinhas scenic view in Hilongos, Leyte" style="width:100%;">
+            <figcaption>Makinhas scenic view</figcaption>
+        </figure>
+    </div>
+
+    <br><br>
+
+    <!-- Contact details kept at the bottom of the page -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>Get in touch with Lloyd Alcoser:</p>
+        <address>
+            <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">johnlloydalcoser@gmail.com</a><br>
+            <a href="tel:09557416741">09557416741</a><br>
+            Lloyd Alcoser/FB
+        </address>
+    </section>
+
+    <!-- Responsive hotspot positioning and hover labels -->
+    <script>
+        function resizeImageMap() {
+            const image = document.getElementById('responsive-map-img');
+            if (!image) return;
+
+            if (!image.naturalWidth) return;
+
+            const scaleRatio = image.getBoundingClientRect().width / image.naturalWidth;
+            const areas = document.querySelectorAll('map[name="image-map"] area');
+            
+            areas.forEach(area => {
+                if (!area.dataset.originalCoords) {
+                    area.dataset.originalCoords = area.coords; // Save the original coords once
+                }
+                const originalCoordsArray = area.dataset.originalCoords.split(',');
+                const scaledCoordsArray = originalCoordsArray.map(coord => Math.round(coord * scaleRatio));
+                area.coords = scaledCoordsArray.join(','); // Apply new scaled coords
+            });
+        }
+
+        const mapImage = document.getElementById('responsive-map-img');
+        const mapResizeObserver = new ResizeObserver(resizeImageMap);
+        mapResizeObserver.observe(mapImage);
+        window.addEventListener('resize', resizeImageMap);
+        mapImage.addEventListener('load', resizeImageMap);
+        resizeImageMap();
+
+        const baywalkArea = document.getElementById('baywalk-area');
+        const baywalkHighlight = document.getElementById('baywalk-highlight');
+        const makinhasHighlight = document.getElementById('makinhas-highlight');
+
+        function positionBaywalkHighlight() {
+            const scaleRatio = mapImage.getBoundingClientRect().width / mapImage.naturalWidth;
+            baywalkHighlight.style.left = `${420 * scaleRatio}px`;
+            baywalkHighlight.style.top = `${589 * scaleRatio}px`;
+            baywalkHighlight.style.width = `${30 * scaleRatio}px`;
+            baywalkHighlight.style.height = `${30 * scaleRatio}px`;
+
+            makinhasHighlight.style.left = `${527 * scaleRatio}px`;
+            makinhasHighlight.style.top = `${479 * scaleRatio}px`;
+            makinhasHighlight.style.width = `${19 * scaleRatio}px`;
+            makinhasHighlight.style.height = `${30 * scaleRatio}px`;
+        }
+
+        const mapContainerObserver = new ResizeObserver(positionBaywalkHighlight);
+        mapContainerObserver.observe(mapImage);
+        mapImage.addEventListener('load', positionBaywalkHighlight);
+        positionBaywalkHighlight();
+
+        baywalkArea.addEventListener('mouseenter', () => baywalkHighlight.classList.add('is-visible'));
+        baywalkArea.addEventListener('focus', () => baywalkHighlight.classList.add('is-visible'));
+        baywalkArea.addEventListener('mouseleave', () => baywalkHighlight.classList.remove('is-visible'));
+        baywalkArea.addEventListener('blur', () => baywalkHighlight.classList.remove('is-visible'));
+
+        const mapHoverLabel = document.getElementById('map-hover-label');
+        const mapTooltip = document.getElementById('map-tooltip');
+        const mapAreas = document.querySelectorAll('map[name="image-map"] area');
+
+        function moveMapTooltip(event) {
+            const containerBounds = mapImage.parentElement.getBoundingClientRect();
+            mapTooltip.style.left = `${event.clientX - containerBounds.left + 14}px`;
+            mapTooltip.style.top = `${event.clientY - containerBounds.top + 14}px`;
+        }
+
+        function showMapTooltip(label, event) {
+            mapTooltip.textContent = label;
+            mapTooltip.classList.add('is-visible');
+            moveMapTooltip(event);
+        }
+
+        function hideMapTooltip() {
+            mapTooltip.classList.remove('is-visible');
+        }
+
+        function showBaywalkLabel() {
+            mapHoverLabel.textContent = 'Baywalk - click to open';
+            mapHoverLabel.classList.add('is-active');
+        }
+
+        function hideBaywalkLabel() {
+            mapHoverLabel.textContent = 'Hover over a map area to explore Hilongos.';
+            mapHoverLabel.classList.remove('is-active');
+        }
+
+        baywalkHighlight.addEventListener('mouseenter', event => {
+            showBaywalkLabel();
+            showMapTooltip('Baywalk', event);
+        });
+        baywalkHighlight.addEventListener('focus', showBaywalkLabel);
+        baywalkHighlight.addEventListener('mousemove', moveMapTooltip);
+        baywalkHighlight.addEventListener('mouseleave', () => {
+            hideBaywalkLabel();
+            hideMapTooltip();
+        });
+        baywalkHighlight.addEventListener('blur', hideBaywalkLabel);
+
+        makinhasHighlight.addEventListener('mouseenter', event => {
+            mapHoverLabel.textContent = 'Makinhas Dam - click to open';
+            mapHoverLabel.classList.add('is-active');
+            showMapTooltip('Makinhas Dam', event);
+        });
+        makinhasHighlight.addEventListener('focus', () => {
+            mapHoverLabel.textContent = 'Makinhas Dam - click to open';
+            mapHoverLabel.classList.add('is-active');
+        });
+        makinhasHighlight.addEventListener('mousemove', moveMapTooltip);
+        makinhasHighlight.addEventListener('mouseleave', () => {
+            hideBaywalkLabel();
+            hideMapTooltip();
+        });
+        makinhasHighlight.addEventListener('blur', hideBaywalkLabel);
+
+        mapAreas.forEach(area => {
+            const showMapLabel = event => {
+                mapHoverLabel.textContent = `${area.title} - click to open`;
+                mapHoverLabel.classList.add('is-active');
+                showMapTooltip(area.title, event);
+            };
+            const hideMapLabel = () => {
+                mapHoverLabel.textContent = 'Hover over a map area to explore Hilongos.';
+                mapHoverLabel.classList.remove('is-active');
+                hideMapTooltip();
+            };
+
+            area.addEventListener('mouseenter', showMapLabel);
+            area.addEventListener('mousemove', moveMapTooltip);
+            area.addEventListener('focus', showMapLabel);
+            area.addEventListener('mouseleave', hideMapLabel);
+            area.addEventListener('blur', hideMapLabel);
+        });
+    </script>
+</body>
+</html>
